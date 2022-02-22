@@ -16,7 +16,7 @@ function App() {
   }, [])
 
   const showSwal = async () => {
-    await ReactSwal.fire(<i>Hi from webpack! 🙂</i>, `SweetAlert2 version: ${Swal.version}`)
+    await ReactSwal.fire(<i>Hi from Vite! 🙂</i>, `SweetAlert2 version: ${Swal.version}`)
 
     const { value: name } = await ReactSwalWithInput.fire({
       text: 'What is your name?',
