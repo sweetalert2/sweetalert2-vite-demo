@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import withReactContent from 'sweetalert2-react-content'
 import './styles.scss'
@@ -11,7 +11,9 @@ const ReactSwalWithInput = ReactSwal.mixin({
 })
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    showSwal()
+  }, [])
 
   const showSwal = async () => {
     await ReactSwal.fire(<i>Hi from webpack! 🙂</i>, `SweetAlert2 version: ${Swal.version}`)
@@ -28,9 +30,7 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <button onClick={showSwal}>sss</button>
-    </div>
+    <div />
   )
 }
 
