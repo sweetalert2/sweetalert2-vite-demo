@@ -1,16 +1,14 @@
 # Demonstration of using [SweetAlert2](https://sweetalert2.github.io/) with [Vite](https://vitejs.dev/)
 
 
-#### index.js:
-```js
-import Swal from 'sweetalert2'
-
-Swal.fire('Hi from vite!')
+#### Dev:
+```sh
+yarn dev
 ```
 
 #### Build:
 ```sh
-$ yarn build
+yarn build
 ```
 
 ---
