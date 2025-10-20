@@ -3,12 +3,12 @@
 
 #### Dev:
 ```sh
-yarn dev
+bun dev
 ```
 
 #### Build:
 ```sh
-yarn build
+bun run build
 ```
 
 ---
